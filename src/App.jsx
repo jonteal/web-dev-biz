@@ -4,6 +4,7 @@ import Navigation from "./pages/navigation/Navigation";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
+import BlogPage from "./pages/blogPage/BlogPage";
 import Contact from "./pages/contact/Contact";
 // import Header from "./components/header/Header";
 // import Footer from "./components/footer/Footer";
@@ -20,7 +21,8 @@ function App() {
           <Route path="/" element={<Navigation />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="blog" element={<Blog />} />
+            <Route path="blogs" element={<Blog />} />
+            <Route path="blogs/:id" element={<BlogPage />} />
             <Route path="contact" element={<Contact />} />
             <Route path="services" element={<Services />} />
             {/* <Route path="*" element={<NotFound />} /> */}

@@ -1,0 +1,67 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "date": "July 4, 2023",
+      "author": "Jon Jackson",
+      "title": "My first blog",
+      "subTitle": "A glimpse into the world of a web developer",
+      "body": [
+        {
+          "id": "1",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        },
+        {
+          "id": "2",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        },
+        {
+          "id": "3",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "date": "July 25, 2023",
+      "author": "Jon Jackson",
+      "title": "My second blog",
+      "subTitle": "A dive into the turbulent world of software engineering",
+      "body": [
+        {
+          "id": "1",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        },
+        {
+          "id": "2",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        },
+        {
+          "id": "3",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "date": "Aug 5, 2023",
+      "author": "Jon Jackson",
+      "title": "My third blog",
+      "subTitle": "Have you ever wondered why our attention spans are so short now?",
+      "body": [
+        {
+          "id": "1",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        },
+        {
+          "id": "2",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        },
+        {
+          "id": "3",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, culpa tenetur placeat quas sapiente sit molestias at magnam iste reiciendis facere non fugit quisquam pariatur aspernatur quaerat, eligendi omnis quidem esse recusandae ipsa neque accusantium ratione. Perferendis et reiciendis provident soluta enim, velit, dicta, nam ullam quis minima sed!"
+        }
+      ]
+    }
+  ]
+}

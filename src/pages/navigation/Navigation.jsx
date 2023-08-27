@@ -18,11 +18,14 @@ const Navigation = () => {
           <Link className="nav-link mx-3 font-serif" to="services">
             Our services
           </Link>
-          <Link className="nav-link mx-3 font-serif" to="blog">
+          <Link className="nav-link mx-3 font-serif" to="blogs">
             Blog
           </Link>
         </div>
-        <Link className="nav-link mx-3 font-serif" to="contact">
+        <Link
+          className="nav-link mx-3 font-serif border bg-slate-700 text-slate-200 px-5 py-2"
+          to="contact"
+        >
           Contact
         </Link>
       </div>
