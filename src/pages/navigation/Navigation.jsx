@@ -1,37 +1,61 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import { OffCanvasExample } from "../../components/menuDrawer/MenuDrawer";
 
 import "./navigation.css";
 
 const Navigation = () => {
-  return (
-    <Fragment>
-      <div className="navigation-container flex flex-row justify-between">
-        <Link className="nav-link mx-3 font-serif" to="/">
-          Jon Jackson
-        </Link>
-        <div className="nav-links">
-          <Link className="nav-link mx-3 font-serif" to="about">
-            About us
-          </Link>
-          <Link className="nav-link mx-3 font-serif" to="services">
-            Our services
-          </Link>
-          <Link className="nav-link mx-3 font-serif" to="blogs">
-            Blog
-          </Link>
-        </div>
-        <Link
-          className="nav-link mx-3 font-serif border bg-slate-700 text-slate-200 px-5 py-2"
-          to="contact"
-        >
-          Contact
-        </Link>
-      </div>
+  const [className, setClassName] = useState("drawer-closed");
+  console.log("classname 1: ", className);
 
-      <Outlet />
-    </Fragment>
+  const handleOpenDrawer = () => {
+    setClassName("drawer-opened");
+    console.log("className after click open: ", className);
+  };
+
+  const handleCloseDrawer = () => {
+    setClassName("drawer-closed");
+    console.log("className after click close: ", className);
+  };
+
+  return (
+    <>
+      {/* <Link
+        className="nav-link mx-3 flex-wrap flex text-3xl text-zinc-100"
+        to="/"
+      >
+        Encompass Digital
+      </Link> */}
+
+      <OffCanvasExample placement="end" />
+      {/* <Fragment>
+        <div className={`navigation-container border ${className}`}>
+          <div className="nav-links flex flex-col">
+            <a
+              className="text-zinc-100 text-3xl closebtn"
+              onClick={handleCloseDrawer}
+            >
+              &times;
+            </a>
+            <Link className="nav-link mx-3 text-zinc-100" to="about">
+              About us
+            </Link>
+            <Link className="nav-link mx-3  text-zinc-100" to="services">
+              Our services
+            </Link>
+            <Link className="nav-link mx-3 text-zinc-100" to="blogs">
+              Blog
+            </Link>
+            <Link className="nav-link mx-3 text-zinc-100" to="contact">
+              Contact
+            </Link>
+          </div>
+        </div>
+
+        <Outlet />
+      </Fragment> */}
+    </>
   );
 };
 

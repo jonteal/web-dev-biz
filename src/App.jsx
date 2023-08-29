@@ -17,9 +17,10 @@ function App() {
     <>
       {/* <Header /> */}
       <Router>
+        <Navigation />
         <Routes>
-          <Route path="/" element={<Navigation />}>
-            <Route index element={<Home />} />
+          <Route>
+            <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blogs/:id" element={<BlogPage />} />
