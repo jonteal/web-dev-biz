@@ -1,11 +1,5 @@
-/* .services-page__main-container {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    background-color:rgb(46, 11, 71);
-    color: white;
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  } */
+
+.services-page__headers-container {
+  background-color:rgb(28, 6, 43);
+  height: 100%
+}

@@ -1,29 +1,16 @@
-/* .navigation-container {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  } */
-
-/* .nav-links {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center; 
-    justify-content: flex-end;
-    margin-right: 25px;
-  } */
-
 .nav-link {
-  /* padding: 10px 12px; */
   cursor: pointer;
   text-decoration: none;
-  color: rgb(31, 31, 31);
+  color: rgb(36, 4, 71);
+}
+
+.navigation__main-container {
+  background-color:rgb(28, 6, 43)
 }
 
 .nav-link:hover {
   text-decoration: underline;
+  color: aliceblue;
 }
 
 .nav-book-button {
@@ -41,66 +28,12 @@
   background-color: #555d80;
 }
 
-.navigation-container {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.navigation-container a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.navigation-container .drawer-opened {
-  width: 250px;
-}
-
-.navigation-container .drawer-closed {
-  width: 0;
-}
-
-.navigation-container a:hover {
-  color: #f1f1f1;
-}
-
-.navigation-container .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.navigation__company-name {
+  background-color:rgb(77, 31, 107);
+  width: 180px;
 }
 
 @media only screen and (max-width: 600px) {
-  /* .navigation-container {
-      height: 70px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 15px;
-    } */
-  /* .nav-links {
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      align-items: center; 
-      justify-content: center;
-    } */
-
   .nav-link {
     padding: 10px 10px;
     cursor: pointer;
