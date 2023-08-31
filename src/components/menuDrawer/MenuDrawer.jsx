@@ -23,9 +23,9 @@ export function OffCanvasExample({ name, ...props }) {
         className="canvas-drawer"
       >
         <Offcanvas.Header className="text-zinc-100" closeButton>
-          <Offcanvas.Title className="text-5xl text-zinc-100">
+          {/* <Offcanvas.Title className="text-5xl text-zinc-100">
             Menu
-          </Offcanvas.Title>
+          </Offcanvas.Title> */}
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Fragment>

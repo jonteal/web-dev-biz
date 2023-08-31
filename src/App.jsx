@@ -8,6 +8,7 @@ import Home from "./pages/home/Home";
 import Navigation from "./pages/navigation/Navigation";
 import NotFound from "./pages/notFound/NotFound";
 import Services from "./pages/services/Services";
+import Websites from "./pages/websites/Websites";
 // import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
@@ -17,20 +18,17 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <Router>
-        <Navigation />
-        <Routes>
-          <Route>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="blogs" element={<Blog />} />
-            <Route path="blogs/:id" element={<BlogPage />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="services" element={<Services />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="blogs" element={<Blog />} />
+        <Route path="blogs/:id" element={<BlogPage />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="services" element={<Services />} />
+        <Route path="services/websites" element={<Websites />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </>
   );
