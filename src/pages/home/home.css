@@ -1,3 +1,4 @@
-.home-page__main-container {
+.home-page__main-container,
+.home-page__services-container {
     background-color:rgb(28, 6, 43)
   }
