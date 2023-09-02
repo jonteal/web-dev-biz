@@ -13,34 +13,33 @@ const BlogSlider = ({ blogs }) => {
     arrows: true,
   };
   return (
-    <div className="px-20 bg-slate-800 h-80">
-      <h2> Multiple items </h2>
+    <div className="px-20 bg-slate-800 h-screen">
       <Slider {...settings}>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>1</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>2</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>3</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>4</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>5</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>6</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>7</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>8</h3>
         </div>
-        <div className="bg-teal-200 h-64">
+        <div className="border h-96 w-32 bg-slate-50">
           <h3>9</h3>
         </div>
       </Slider>
