@@ -50,7 +50,7 @@ const Testimonials = () => {
         {testimonialsData.map((t) => {
           return (
             <Carousel.Item key={t.id} className="align-self">
-              <div className="border w-7/12 m-auto flex justify-center flex-col items-center">
+              <div className="w-7/12 m-auto flex justify-center flex-col items-center">
                 <h3 className="font-bold text-2xl text-slate-900 text-center">
                   {t.name}
                 </h3>

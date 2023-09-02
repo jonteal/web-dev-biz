@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import Testimonials from "../../components/testimonials/Testimonials";
 import ContactSection from "../../components/contactSection/ContactSection";
 import ServicesSection from "../../components/servicesSection/ServicesSection";
-import BlogSection from "../../components/blogSection/BlogSection";
+// import BlogSection from "../../components/blogSection/BlogSection";
 import MainLandingSection from "../../components/mainLandingSection/MainLandingSection";
+
 import "./home.css";
 
 const Home = () => {

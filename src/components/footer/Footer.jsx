@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
+
 import "./footer.css";
 
 const Footer = () => {
