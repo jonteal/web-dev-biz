@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Montserrat: ['"Light 300"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
