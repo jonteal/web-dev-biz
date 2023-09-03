@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Stock1 from "../../assets/images/website-img.jpg";
 import { FaArrowRight } from "react-icons/fa";
-import LearnMoreButton from "../learnMoreButton/LearnMoreButton";
+import LearnMoreButton from "../buttons/learnMoreButton/LearnMoreButton";
 
 const ServicesSection = () => {
   return (

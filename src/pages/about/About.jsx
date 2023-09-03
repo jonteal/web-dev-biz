@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Stock1 from "../../assets/images/website-img.jpg";
 import "./about.css";
 import FadeInSection from "../../components/fadeInSection/FadeInSection";
-import Button from "../../components/button/Button";
+import Button from "../../components/buttons/button/Button";
 
 const About = () => {
   return (

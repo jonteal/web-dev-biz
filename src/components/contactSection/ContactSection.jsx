@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../button/Button";
+import Button from "../buttons/button/Button";
 
 const ContactSection = () => {
   return (
