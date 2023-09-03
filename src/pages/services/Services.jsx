@@ -31,10 +31,10 @@ const Services = () => {
                 back.
               </h4>
               <Link to="websites">
-                Learn more
-                <span className="ml-5">
+                <div className="flex flex-row items-center mt-3">
+                  <span className="mr-2 text-lg">Learn more</span>
                   <FaArrowRight />
-                </span>
+                </div>
               </Link>
             </div>
             <div className="services-page__service-image w-1/2 overflow-hidden">

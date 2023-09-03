@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Stock1 from "../../assets/images/website-img.jpg";
 import { FaArrowRight } from "react-icons/fa";
+import LearnMoreButton from "../learnMoreButton/LearnMoreButton";
 
 const ServicesSection = () => {
   return (
@@ -19,46 +20,34 @@ const ServicesSection = () => {
               <h3 className="font-bold text-2xl text-slate-100 mb-3 text-start">
                 Websites
               </h3>
-              <p className="text-1xl text-slate-100 text-start mb-3">
+              <p className="text-1xl text-slate-100 text-start mb-4">
                 E-commerce sites to landing pages, turn your users into
                 loyalists
               </p>
-              <Link
-                className="font-bold text-1xl mb-3 text-start flex flex-row items-center hover:bg-sky-700 text-teal-500"
-                to="services/websites"
-              >
-                <span className="mr-2">Learn more</span>
-                <FaArrowRight className="mr-2" />
+              <Link to="services/websites">
+                <LearnMoreButton>Learn more</LearnMoreButton>
               </Link>
             </div>
             <div className="w-1/3">
               <h3 className="font-bold text-2xl text-slate-100 mb-3 text-start">
                 Advertising
               </h3>
-              <p className="text-1xl text-slate-100 text-start mb-3">
+              <p className="text-1xl text-slate-100 text-start mb-4">
                 Banner ads to global campaigns, get ready to get noticed
               </p>
-              <Link
-                className="font-bold text-1xl mb-3 text-start flex flex-row items-center hover:bg-sky-700 text-teal-500"
-                to="services/websites"
-              >
-                <span className="mr-2">Learn more</span>
-                <FaArrowRight className="mr-2" />
+              <Link to="services/websites">
+                <LearnMoreButton>Learn more</LearnMoreButton>
               </Link>
             </div>
             <div className="w-1/3">
               <h3 className="font-bold text-2xl text-slate-100 mb-3 text-start">
                 Blogging
               </h3>
-              <p className="text-1xl text-slate-100 text-start mb-3">
+              <p className="text-1xl text-slate-100 text-start mb-4">
                 Writing and managing company blogs for customer engagement
               </p>
-              <Link
-                className="font-bold text-1xl mb-3 text-start flex flex-row items-center hover:bg-sky-700 text-teal-500"
-                to="services/websites"
-              >
-                <span className="mr-2">Learn more</span>
-                <FaArrowRight className="mr-2" />
+              <Link to="services/websites">
+                <LearnMoreButton>Learn more</LearnMoreButton>
               </Link>
             </div>
           </div>
