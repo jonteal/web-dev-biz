@@ -19,7 +19,7 @@ const Services = () => {
 
       <FadeInSection>
         <div className="services-page__services-container flex flex-col items-center">
-          <div className="flex flex-row px-40 h-96 my-40">
+          <div className="flex flex-row px-40 h-96 mt-40 mb-10">
             <div className="w-1/2 pr-10">
               <h3 className="services-page__service-label text-5xl font-bold mb-10">
                 Websites
@@ -31,6 +31,50 @@ const Services = () => {
                 back.
               </h4>
               <Link to="websites">
+                <div className="flex flex-row items-center mt-3">
+                  <span className="mr-2 text-lg">Learn more</span>
+                  <FaArrowRight />
+                </div>
+              </Link>
+            </div>
+            <div className="services-page__service-image w-1/2 overflow-hidden">
+              <img src={WebsiteImage} alt="Websites" />
+            </div>
+          </div>
+          <div className="flex flex-row px-40 h-96 mb-10">
+            <div className="services-page__service-image w-1/2 overflow-hidden">
+              <img src={WebsiteImage} alt="Websites" />
+            </div>
+            <div className="w-1/2 pl-10">
+              <h3 className="services-page__service-label text-5xl font-bold mb-10">
+                Advertising
+              </h3>
+              <h4 className="services-page__service-description text-3xl">
+                From campaign landing pages to full e-commerce sites, we offer
+                content strategy, UX, design, and development to give your brand
+                a digital home that will attract users and keep them coming
+                back.
+              </h4>
+              <Link to="advertising">
+                <div className="flex flex-row items-center mt-3">
+                  <span className="mr-2 text-lg">Learn more</span>
+                  <FaArrowRight />
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-row px-40 h-96 mb-10">
+            <div className="w-1/2 pr-10">
+              <h3 className="services-page__service-label text-5xl font-bold mb-10">
+                Blogging
+              </h3>
+              <h4 className="services-page__service-description text-3xl">
+                From campaign landing pages to full e-commerce sites, we offer
+                content strategy, UX, design, and development to give your brand
+                a digital home that will attract users and keep them coming
+                back.
+              </h4>
+              <Link to="blogging">
                 <div className="flex flex-row items-center mt-3">
                   <span className="mr-2 text-lg">Learn more</span>
                   <FaArrowRight />

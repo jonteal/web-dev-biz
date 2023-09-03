@@ -13,6 +13,8 @@ import Websites from "./pages/websites/Websites";
 import Footer from "./components/footer/Footer";
 
 import "./App.css";
+import Advertising from "./pages/advertising/Advertising";
+import Blogging from "./pages/blogging/Blogging";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
         <Route path="services/websites" element={<Websites />} />
+        <Route path="services/advertising" element={<Advertising />} />
+        <Route path="services/blogging" element={<Blogging />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
