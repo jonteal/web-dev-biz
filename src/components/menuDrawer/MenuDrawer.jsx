@@ -13,7 +13,10 @@ export function OffCanvasExample({ name, ...props }) {
 
   return (
     <>
-      <button onClick={handleShow} className="me-2 text-5xl text-zinc-100">
+      <button
+        onClick={handleShow}
+        className="me-2 text-5xl text-zinc-100 sticky"
+      >
         &#9776;
       </button>
       <Offcanvas

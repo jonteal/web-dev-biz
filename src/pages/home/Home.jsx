@@ -4,6 +4,7 @@ import ContactSection from "../../components/contactSection/ContactSection";
 import ServicesSection from "../../components/servicesSection/ServicesSection";
 // import BlogSection from "../../components/blogSection/BlogSection";
 import MainLandingSection from "../../components/mainLandingSection/MainLandingSection";
+import FadeInSection from "../../components/fadeInSection/FadeInSection";
 
 import "./home.css";
 
@@ -28,11 +29,23 @@ const Home = () => {
   }, []);
   return (
     <>
-      <MainLandingSection />
-      <ServicesSection />
-      <Testimonials />
+      <FadeInSection>
+        <MainLandingSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <ServicesSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Testimonials />
+      </FadeInSection>
+
       {/* <BlogSection blogs={blogs} /> */}
-      <ContactSection />
+
+      <FadeInSection>
+        <ContactSection />
+      </FadeInSection>
     </>
   );
 };

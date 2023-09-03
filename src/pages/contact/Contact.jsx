@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 // import emailjs from "emailjs-com";
 
 import "./contact.css";
+import FadeInSection from "../../components/fadeInSection/FadeInSection";
 
 const Contact = () => {
   const formRef = useRef();
@@ -38,60 +39,62 @@ const Contact = () => {
         </h1>
         <hr className="line-break" />
       </div> */}
-      <div className="contact" id="contact-me-section">
-        <div className="contact-bg"></div>
-        <div className="contact-wrapper">
-          <div className="contact-left">
-            <h1 className="contact-title">We'd love to hear from you!</h1>
+      <FadeInSection>
+        <div className="contact" id="contact-me-section">
+          <div className="contact-bg"></div>
+          <div className="contact-wrapper">
+            <div className="contact-left">
+              <h1 className="contact-title">We'd love to hear from you!</h1>
 
-            {/* Contact information */}
-            <div className="contact-info">
-              <div className="contact-info-item flex flex-row items-center">
-                <FaPhoneAlt className="mr-2" />
-                +1 (479) 601-3157
-              </div>
-              <div className="contact-info-item flex flex-row items-center">
-                <FaMailBulk className="mr-2" />
-                jonjackson.webdesign@gmail.com
-              </div>
-              <div className="contact-info-item flex flex-row items-center">
-                <FaMapMarkerAlt className="mr-2" />
-                Lowell, AR
+              {/* Contact information */}
+              <div className="contact-info">
+                <div className="contact-info-item flex flex-row items-center">
+                  <FaPhoneAlt className="mr-2" />
+                  +1 (479) 601-3157
+                </div>
+                <div className="contact-info-item flex flex-row items-center">
+                  <FaMailBulk className="mr-2" />
+                  jonjackson.webdesign@gmail.com
+                </div>
+                <div className="contact-info-item flex flex-row items-center">
+                  <FaMapMarkerAlt className="mr-2" />
+                  Lowell, AR
+                </div>
               </div>
             </div>
-          </div>
-          <div className="contact-right">
-            {/* Form to reach out via email */}
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <div className="flex flex-row justify-between">
-                <input
-                  className="border mb-3 mr-3 pl-2"
+            <div className="contact-right">
+              {/* Form to reach out via email */}
+              <form ref={formRef} onSubmit={handleSubmit}>
+                <div className="flex flex-row justify-between">
+                  <input
+                    className="border mb-3 mr-3 pl-2"
+                    tabIndex={"0"}
+                    type="text"
+                    placeholder="Name"
+                    name="user_name"
+                  />
+                  <input
+                    className="border mb-3 pl-2"
+                    tabIndex={"0"}
+                    type="text"
+                    placeholder="Email"
+                    name="user_email"
+                  />
+                </div>
+                <textarea
+                  className="border pl-2 pt-2"
                   tabIndex={"0"}
-                  type="text"
-                  placeholder="Name"
-                  name="user_name"
+                  rows="5"
+                  placeholder="Message"
+                  name="message"
                 />
-                <input
-                  className="border mb-3 pl-2"
-                  tabIndex={"0"}
-                  type="text"
-                  placeholder="Email"
-                  name="user_email"
-                />
-              </div>
-              <textarea
-                className="border pl-2 pt-2"
-                tabIndex={"0"}
-                rows="5"
-                placeholder="Message"
-                name="message"
-              />
-              <button className="button px-5 py-2 mt-2">Send</button>
-              {done && "Thank you for your message!"}
-            </form>
+                <button className="button px-5 py-2 mt-2">Send</button>
+                {done && "Thank you for your message!"}
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </FadeInSection>
     </div>
   );
 };

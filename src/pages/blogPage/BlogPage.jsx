@@ -28,7 +28,6 @@ const BlogPage = () => {
 
   const selectedBlog = blogs?.filter((blog) => blog.id === id)[0];
   const paragraphs = selectedBlog?.body;
-  console.log("paragraphs: ", typeof paragraphs);
 
   return (
     <div className="flex flex-col items-start px-28">

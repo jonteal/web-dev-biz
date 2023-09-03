@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./blog.css";
 import BlogCard from "../../components/blogCard/BlogCard";
+import FadeInSection from "../../components/fadeInSection/FadeInSection";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -23,11 +24,13 @@ const Blog = () => {
     getData();
   }, []);
   return (
-    <div className="blog-container flex flex-row items-center">
-      {blogs.map((blog) => (
-        <BlogCard key={blog.id} blog={blog} />
-      ))}
-    </div>
+    <FadeInSection>
+      <div className="blog-container flex flex-row items-center">
+        {blogs.map((blog) => (
+          <BlogCard key={blog.id} blog={blog} />
+        ))}
+      </div>
+    </FadeInSection>
   );
 };
 
