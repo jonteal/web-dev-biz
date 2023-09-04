@@ -1,0 +1,9 @@
+.corner {
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%, 55% 45%, 0 45%);
+  box-shadow: 0 0 5px 10px #555;
+  opacity: 25%;
+  margin-left: 60%;
+  margin-right: 40%;
+}

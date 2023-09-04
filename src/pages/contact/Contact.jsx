@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 
 import "./contact.css";
 import FadeInSection from "../../components/fadeInSection/FadeInSection";
+import Button from "../../components/buttons/button/Button";
 
 const Contact = () => {
   const formRef = useRef();
@@ -40,23 +41,29 @@ const Contact = () => {
         <hr className="line-break" />
       </div> */}
       <FadeInSection>
-        <div className="contact" id="contact-me-section">
+        <div
+          className="contact contact-page__main-container"
+          id="contact-me-section"
+        >
           <div className="contact-bg"></div>
           <div className="contact-wrapper">
             <div className="contact-left">
-              <h1 className="contact-title">We'd love to hear from you!</h1>
+              <h1 className="text-4xl mt-10 mb-4 text-teal-500">Contact us</h1>
+              <h2 className="contact-title text-slate-100 font-bold text-6xl">
+                We'd love to hear from you!
+              </h2>
 
               {/* Contact information */}
               <div className="contact-info">
-                <div className="contact-info-item flex flex-row items-center">
+                <div className="contact-info-item flex flex-row items-center text-slate-100 text-2xl">
                   <FaPhoneAlt className="mr-2" />
                   +1 (479) 601-3157
                 </div>
-                <div className="contact-info-item flex flex-row items-center">
+                <div className="contact-info-item flex flex-row items-center text-slate-100 text-2xl">
                   <FaMailBulk className="mr-2" />
                   jonjackson.webdesign@gmail.com
                 </div>
-                <div className="contact-info-item flex flex-row items-center">
+                <div className="contact-info-item flex flex-row items-center text-slate-100 text-2xl">
                   <FaMapMarkerAlt className="mr-2" />
                   Lowell, AR
                 </div>
@@ -82,13 +89,14 @@ const Contact = () => {
                   />
                 </div>
                 <textarea
-                  className="border pl-2 pt-2"
+                  className="border pl-2 pt-2 mb-3"
                   tabIndex={"0"}
                   rows="5"
                   placeholder="Message"
                   name="message"
                 />
-                <button className="button px-5 py-2 mt-2">Send</button>
+                <Button>Send</Button>
+                {/* <button className="button px-5 py-2 mt-2">Send</button> */}
                 {done && "Thank you for your message!"}
               </form>
             </div>

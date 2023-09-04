@@ -1,5 +1,6 @@
 .home-page__main-container,
 .home-page__services-container,
-.home-page__contact-section {
+.home-page__contact-section,
+.contact-page__main-container {
   background-color: rgb(28, 6, 43);
 }
